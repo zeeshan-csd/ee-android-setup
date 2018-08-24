@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<title>EE Setup Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+	}
+
+@keyframes move1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 00px 100vw;
+  }
+}
+
+@keyframes move2 {
+  0% {
+    background-position: 0 0;
+		}
+  100% {
+    background-position: 00px 100vw;
+		}
+	}
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+ 
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+
+    background-color: #296;
+    animation: move 200s linear infinite; 
+    background-image: linear-gradient(white 2px, transparent 2px),
+linear-gradient(90deg, white 2px, transparent 2px),
+linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
+background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
+    min-height: 100%;
+    animation: move2 90s linear infinite; 
+      
+
+}
+
+
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-color: #c0c0c0;
+    background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,.5) 50%);
+  
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-color: #007542;
+    background-image: repeating-linear-gradient(180deg, transparent, transparent 35px, rgba(89, 179, 140,.5) 35px, rgba(89, 179, 140,.5) 70px);
+    min-height: 60px;
+     animation: move2 20s linear infinite;
+}
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<body>
+
+
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="container">
+  <a style="position: absolute; margin: 20% 0 0 50%;" href="https://dl.dropboxusercontent.com/s/295s84fsnduc9n5/EE%20HelpHub%20v2.0.apk?dl=0">
+  <div  class="w3-display-middle" style="white-space:nowrap; font-size:1vw">
+    <span style="font-size:1vw;" class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">DOWNLOAD EE - <span class="w3-hide-small">HELP-HUB ANDROID </span>APP</span>
+  </div></a>
+  
+  <!-- <a style="position: absolute; margin: 25% 0 0 50%;" href="https://dl.dropboxusercontent.com/s/cx77wy0oq9tyv12/EE%20x1200%20Setup.exe?dl=0"> -->
+  <!-- <div class="w3-display-middle" style="white-space:nowrap;"> -->
+    <!-- <span style="font-size:1vw;" class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">DOWNLOAD EE - <span class="w3-hide-small">SMARTHUB APP - </span>(1920x1200P)</span> -->
+  <!-- </div></a> -->
+  </div>
+</div>
+
+
+</body>
+</html>
